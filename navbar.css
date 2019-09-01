@@ -1,0 +1,181 @@
+.logo {
+  font-family: BauerBodoni-Standart;
+  float: left;
+  line-height: 45px;
+  position: fixed;
+  float: left;
+  margin: 16px 0px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  z-index: 999;
+  -webkit-transition: line-height .3s;
+  transition: line-height .3s;
+}
+
+.logo.white {
+  line-height: 37.5px;
+  color: #fff;
+  -webkit-transition: line-height .3s;
+  transition: line-height .3s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 999;
+  height: 77px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header.black {
+  height: 69px;
+  background-color: #040502;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav {
+  position: fixed;
+  width: 90%;
+  max-width: 1550px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  line-height: 45px;
+  top: 0;
+  z-index: 998;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #fff;
+}
+
+nav .menu-icon {
+  line-height: 30px;
+  background: #040502;
+  width: 100%;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 0px;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  line-height: 45px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 15px;
+}
+
+nav ul li:nth-child(3) {
+  padding-right: 0px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  z-index: 999;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #333;
+}
+
+nav.black ul {
+  background: rgba(0, 0, 0, 0);
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  line-height: 37.5px;
+}
+
+nav.black ul li a {
+  -webkit-transition: border .3s ease-out;
+  transition: border .3s ease-out;
+}
+
+nav.black ul li a.black:hover {
+  border-color: #fff;
+}
+
+nav.black ul li.active a {
+  border-bottom: 2px solid #333;
+}
+
+@media screen and (max-width: 786px) {
+  header {
+    line-height: 30px;
+    height: 71px;
+    width: 100%;
+    background-color: #040502;
+  }
+  header nav .menu-icon {
+    display: block;
+  }
+  header nav .menu-icon .fa {
+    line-height: 30px;
+    top: 0;
+    margin-top: 5px;
+  }
+  header nav .logo {
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    line-height: 30px;
+    margin: 20.5px 15px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  header nav ul {
+    max-height: 0;
+    background: rgba(0, 0, 0, 0);
+    line-height: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  header nav ul li {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 16px 0px;
+  }
+  header nav ul li a {
+    border-bottom: 0px solid #fff;
+    padding-left: 0px;
+  }
+  header nav ul li a:hover {
+    border-bottom: 0px solid #fff;
+  }
+  .show-header {
+    height: 257px;
+  }
+  .showing {
+    max-height: 34em;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
